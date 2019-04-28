@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "533539184773",
+    "firebase_url": "https://pototypee.firebaseio.com",
+    "project_id": "pototypee",
+    "storage_bucket": "pototypee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533539184773:android:416669028f4bba10",
+        "android_client_info": {
+          "package_name": "com.example.prototype3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533539184773-ildc62bph43flu3jvgvnoaqvhfeu1o2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfCAsmx28v13rD-qEMNN4osTuy1rnXGLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533539184773-ildc62bph43flu3jvgvnoaqvhfeu1o2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

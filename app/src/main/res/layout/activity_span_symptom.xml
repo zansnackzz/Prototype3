@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".span_symptomtwo" android:id="@+id/next_btn">
+    <TextView
+            android:text="แบบประเมินคัดกรอง Barthel ADL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.539"
+            android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.011"/>
+    <TextView
+            android:text="3. Transfer (ลุกนั่งจากที่นอน หรือจากเตียงไปยังเก้าอี้)"
+            android:layout_width="332dp"
+            android:layout_height="28dp" android:id="@+id/textView10" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.557" android:textSize="14sp"
+            android:layout_marginBottom="8dp" app:layout_constraintHorizontal_bias="0.444"/>
+    <TextView
+            android:text="2. Grooming (ล้างหน้า หวีผม แปรงฟัน โกนหนวด ในระยะเวลา 24 - 28 ชั่วโมงที่ผ่านมา)"
+            android:layout_width="322dp"
+            android:layout_height="43dp" android:id="@+id/textView9" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            app:layout_constraintHorizontal_bias="0.383" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.349"/>
+    <TextView
+            android:text="1. Feeding (รับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)"
+            android:layout_width="339dp"
+            android:layout_height="34dp" android:id="@+id/textView8" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.073" android:layout_marginTop="8dp"
+    />
+    <RadioGroup
+            android:layout_width="340dp"
+            android:layout_height="123dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView9" app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:id="@+id/radioGroup2" app:layout_constraintHorizontal_bias="0.509"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp">
+        <RadioButton
+                android:text="0. ไม่สามารถตักอาหารเข้าปากได้ ต้องมีคนป้อนให้"
+                android:layout_width="310dp"
+                android:layout_height="32dp" android:id="@+id/radioButton8"
+                android:textSize="12sp"/>
+        <RadioButton
+                android:layout_width="328dp"
+                android:layout_height="44dp" android:id="@+id/radioButton4"
+                android:textSize="12sp"
+                android:text="1. ตักอาหารเองได้แต่ต้องมีคนช่วย เช่น ช่วยใช้ช้อนตักเตรียมไว้ให้หรือตัดเป็นเล็กๆไว้ล่วงหน้า"
+        />
+        <RadioButton
+                android:layout_width="278dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton9"
+                android:textSize="12sp"
+                android:text="2. ตักอาหารและช่วยตัวเองได้เป็นปกติ"
+        />
+    </RadioGroup>
+    <RadioGroup
+            android:layout_width="327dp"
+            android:layout_height="69dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView10" android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintVertical_bias="0.0">
+        <RadioButton
+                android:layout_width="242dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton11"
+                android:textSize="12sp"
+                android:text="0. ต้องการความช่วยเหลือ"
+        />
+        <RadioButton
+                android:layout_width="315dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton6"
+                android:textSize="12sp"
+                android:text="1. ทำเองได้ (รวมทั้งที่ทำได้เองถ้าเตรียมอุปกรณ์ไว้ให้)"
+        />
+    </RadioGroup>
+    <RadioGroup
+            android:layout_width="339dp"
+            android:layout_height="205dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:id="@+id/radioGroup3"
+            android:layout_marginVertical="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nexttwo_btn" app:layout_constraintVertical_bias="0.0">
+        <RadioButton
+                android:layout_width="311dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton13"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:text="0. ไม่สามารถนั่งได้ (นั่งแล้วจะล้มเสมอ) หรือต้องใช้คนสองคนช่วยกันยกขึ้น"/>
+        <RadioButton
+                android:layout_width="310dp"
+                android:layout_height="59dp" android:id="@+id/radioButton12"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:text="1. ต้องการความช่วยเหลืออย่างมากจึงจะนั่งได้ เช่น ต้องใช้คนที่แข็งแรงหรือมีทักษะ 1คน หรือใช้คน  ทั่วไป 2 คนพยุงหรือดันขึ้นมาจึงจะนั่งอยู่ได้"/>
+        <RadioButton
+                android:layout_width="312dp"
+                android:layout_height="42dp" android:id="@+id/radioButton10"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:text="2. ต้องการความช่วยเหลือบ้าง เช่นบอกให้ทำตาม หรือช่วยพยุงเล็กน้อย หรือต้องมีคนดูแลเพื่อความปลอดภัย"/>
+        <RadioButton
+                android:layout_width="313dp"
+                android:layout_height="wrap_content" android:id="@+id/radioButton15"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:text="3. ทำได้เอง "/>
+    </RadioGroup>
+    <TextView
+            android:text="ถัดไป"
+            android:layout_width="83dp"
+            android:layout_height="26dp"
+            android:id="@+id/nexttwo_btn" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.988" android:textAlignment="center" android:textSize="14sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
