@@ -12,6 +12,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Listview_patient_new">
+        </activity>
+        <activity android:name=".Listview_patient">
+        </activity>
         <activity android:name=".span_symptomtwo">
         </activity>
         <activity android:name=".span_symptomthree">
@@ -20,7 +24,7 @@
         </activity>
         <activity android:name=".span_symptom">
         </activity>
-        <activity android:name=".Girl_input">
+        <activity android:name=".Detail_input">
         </activity>
         <activity android:name=".Man_input">
         </activity>

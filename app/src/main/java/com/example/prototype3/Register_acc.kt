@@ -58,6 +58,8 @@ class Register_acc : AppCompatActivity() {
 
                     return@addOnCompleteListener
                 }
+                sentDb()
+
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
 
@@ -68,7 +70,7 @@ class Register_acc : AppCompatActivity() {
                 return@addOnFailureListener
             }
 
-        sentDb()
+
     }
 
 
@@ -86,9 +88,10 @@ class Register_acc : AppCompatActivity() {
         val rb = findViewById<RadioButton>(valuetwo)
         val rbb = rb.text.toString().trim()
 
-        val ref = FirebaseDatabase.getInstance().getReference("Users")
+        val userId = FirebaseAuth.getInstance().uid
+        val ref = FirebaseDatabase.getInstance().getReference("/Users/$userId")
 
-        val userId = ref.push().key
+
         val user = sentToDb(userId.toString(),mmmail,pppass,nnname,lllastname,bbbd,aaaaddress,rbb)
 
         ref.child(userId.toString()).setValue(user).addOnCompleteListener {

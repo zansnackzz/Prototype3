@@ -5,11 +5,12 @@ import android.os.Bundle
 import android.content.Intent
 import android.widget.EditText
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_girl_input.*
-import kotlinx.android.synthetic.main.activity_man_input.*
 
-class Girl_input : AppCompatActivity() {
+
+class Detail_input : AppCompatActivity() {
     lateinit var nnamepatient: EditText
     lateinit var llastnamepatient: EditText
     lateinit var bbd: EditText
@@ -49,8 +50,8 @@ class Girl_input : AppCompatActivity() {
         val tttelcare = ttelcare.text.toString().trim()
 
 
-
-        val ref = FirebaseDatabase.getInstance().getReference("Patient")
+        val userId = FirebaseAuth.getInstance().uid
+        val ref = FirebaseDatabase.getInstance().getReference("/Patient/$userId")
 
         val patientId = ref.push().key
         val patient = sentToDbpatient(patientId.toString(),nnnamepatient,lllastnamepatient,bbbd,aaaadress,aaaadresscare,nnnamecare,tttelcare)
