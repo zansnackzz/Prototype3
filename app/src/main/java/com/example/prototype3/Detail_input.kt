@@ -32,12 +32,25 @@ class Detail_input : AppCompatActivity() {
         nnamecare = findViewById(R.id.namecare_patient)
         ttelcare = findViewById(R.id.telcare_patient)
 
+
         spangirl_btn.setOnClickListener {
 
+            val nnamepatientt = nnamepatient.text.toString()
+            val llastnamepatientt = llastnamepatient.text.toString()
+            val bbdd = bbd.text.toString()
+            val aaadresss = aaadress.text.toString()
+            val aaadresscaree = aaadresscare.text.toString()
+            val nnamecaree = nnamecare.text.toString()
+            val tttelcare = ttelcare.text.toString()
 
-            val intent = Intent(this, span_symptom::class.java)
-            startActivity(intent)
-            sentDb()
+
+            if (nnamepatientt.isEmpty() || llastnamepatientt.isEmpty()|| bbdd.isEmpty() || aaadresss.isEmpty()|| aaadresss.isEmpty()|| aaadresscaree.isEmpty()|| nnamecaree.isEmpty()|| tttelcare.isEmpty()){
+                Toast.makeText(this, "กรุณากรอกข้อมูลให้ครบ.", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, span_symptom::class.java)
+                startActivity(intent)
+                sentDb()
+                return@setOnClickListener
+            }
         }
     }
     private fun sentDb(){
