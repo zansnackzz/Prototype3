@@ -23,7 +23,6 @@ class Detail_input : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_girl_input)
 
-
         nnamepatient = findViewById(R.id.name_patient)
         llastnamepatient = findViewById(R.id.lastname_patient)
         bbd = findViewById(R.id.bd_patient)
@@ -34,23 +33,26 @@ class Detail_input : AppCompatActivity() {
 
 
         spangirl_btn.setOnClickListener {
+            checkblank()
 
-            val nnamepatientt = nnamepatient.text.toString()
-            val llastnamepatientt = llastnamepatient.text.toString()
-            val bbdd = bbd.text.toString()
-            val aaadresss = aaadress.text.toString()
-            val aaadresscaree = aaadresscare.text.toString()
-            val nnamecaree = nnamecare.text.toString()
-            val tttelcare = ttelcare.text.toString()
+        }
+    }
+    private fun checkblank(){
+        val nnamepatientt = nnamepatient.text.toString()
+        val llastnamepatientt = llastnamepatient.text.toString()
+        val bbdd = bbd.text.toString()
+        val aaadresss = aaadress.text.toString()
+        val aaadresscaree = aaadresscare.text.toString()
+        val nnamecaree = nnamecare.text.toString()
+        val tttelcare = ttelcare.text.toString()
 
 
-            if (nnamepatientt.isEmpty() || llastnamepatientt.isEmpty()|| bbdd.isEmpty() || aaadresss.isEmpty()|| aaadresss.isEmpty()|| aaadresscaree.isEmpty()|| nnamecaree.isEmpty()|| tttelcare.isEmpty()){
-                Toast.makeText(this, "กรุณากรอกข้อมูลให้ครบ.", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, span_symptom::class.java)
-                startActivity(intent)
-                sentDb()
-                return@setOnClickListener
-            }
+        if (nnamepatientt.isEmpty() || llastnamepatientt.isEmpty()|| bbdd.isEmpty() || aaadresss.isEmpty()|| aaadresss.isEmpty()|| aaadresscaree.isEmpty()|| nnamecaree.isEmpty()|| tttelcare.isEmpty()){
+            Toast.makeText(this, "กรุณากรอกข้อมูลให้ครบ.", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, span_symptom::class.java)
+            startActivity(intent)
+            sentDb()
+            return checkblank()
         }
     }
     private fun sentDb(){
