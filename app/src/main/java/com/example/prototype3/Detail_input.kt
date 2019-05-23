@@ -112,8 +112,7 @@ class Detail_input : AppCompatActivity() {
             val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectedPhotoUri)
             after_image_select.setImageBitmap(bitmap)
             img_p_upload.alpha = 0f
-           // val bitmapDrawable = BitmapDrawable(bitmap)
-           // img_p_upload.setBackgroundDrawable(bitmapDrawable)
+
 
 
         }
