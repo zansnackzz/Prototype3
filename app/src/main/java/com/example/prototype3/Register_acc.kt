@@ -24,8 +24,7 @@ class Register_acc : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_acc)
 
-        mmail = this.findViewById(R.id.mail_regis)
-
+        mmail = findViewById(R.id.mail_regis)
         ppass = findViewById(R.id.pass_regis)
         nname = findViewById(R.id.name_regis)
         llastname = findViewById(R.id.lastname_regis)

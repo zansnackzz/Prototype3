@@ -34,6 +34,7 @@ class Detail_input : AppCompatActivity() {
 
         spangirl_btn.setOnClickListener {
             checkblank()
+          //  sentDb()
 
         }
     }
@@ -49,11 +50,14 @@ class Detail_input : AppCompatActivity() {
 
         if (nnamepatientt.isEmpty() || llastnamepatientt.isEmpty()|| bbdd.isEmpty() || aaadresss.isEmpty()|| aaadresss.isEmpty()|| aaadresscaree.isEmpty()|| nnamecaree.isEmpty()|| tttelcare.isEmpty()){
             Toast.makeText(this, "กรุณากรอกข้อมูลให้ครบ.", Toast.LENGTH_SHORT).show()
+
+            return
+        }else{
             val intent = Intent(this, span_symptom::class.java)
-            startActivity(intent)
             sentDb()
-            return checkblank()
+            startActivity(intent)
         }
+
     }
     private fun sentDb(){
         val nnnamepatient = nnamepatient.text.toString().trim()
