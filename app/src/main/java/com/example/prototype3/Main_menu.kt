@@ -13,7 +13,7 @@ class Main_menu : AppCompatActivity() {
 
 
         recive_old_btn.setOnClickListener{
-            val intent = Intent(this,Listview_patient_new::class.java)
+            val intent = Intent(this,List_patient::class.java)
             startActivity(intent)
         }
 
