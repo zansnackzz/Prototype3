@@ -12,6 +12,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Detail_Activity">
+        </activity>
         <activity android:name=".List_patient">
         </activity>
         <activity android:name=".DBinput.Listview_p_n">

@@ -17,6 +17,7 @@ import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
 import kotlinx.android.synthetic.main.activity_list_patient.*
 import kotlinx.android.synthetic.main.patien_c_patien.view.*
+import java.lang.reflect.InvocationTargetException
 
 class List_patient : AppCompatActivity() {
 
@@ -24,16 +25,21 @@ class List_patient : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_patient)
 
-   //     val adapter = GroupAdapter<ViewHolder>()
-   //     adapter.add(UserItem())
-   //     adapter.add(UserItem())
-   //     adapter.add(UserItem())
-
-   //     patient_view.adapter = adapter
 
         fetchUsers()
 
         }
+    companion object {
+
+        val USER_NAME = "USER_NAME"
+        val USER_LASTNAME = "USER_LASTNAME"
+        val USER_ADD = "USER_ADD"
+        val USER_NAME_CARE = "USER_NAME_CARE"
+        val USER_ADD_CARE = "USER_ADD_CARE"
+        val USER_TEL_CARE = "USER_TEL_CARE"
+        val USER_PIC = "USER_PIC"
+        val USER_BD = "USER_BD"
+    }
     private fun fetchUsers(){
         val userId = FirebaseAuth.getInstance().uid
         Log.d("List_patient","My uid :$userId")
@@ -47,8 +53,24 @@ class List_patient : AppCompatActivity() {
                     if (user != null ){
                         adapter.add(UserItem(user))
                     }
-
                 }
+
+                adapter.setOnItemClickListener{ item, view ->
+                    val userItem = item as UserItem
+                    val intent = Intent(view.context, Detail_Activity::class.java)
+                    intent.putExtra(USER_NAME, userItem.user.name)
+                    intent.putExtra(USER_LASTNAME, userItem.user.lastname)
+                    intent.putExtra(USER_ADD, userItem.user.address)
+                    intent.putExtra(USER_NAME_CARE, userItem.user.namecare)
+                    intent.putExtra(USER_ADD_CARE, userItem.user.addresscare)
+                    intent.putExtra(USER_TEL_CARE, userItem.user.tel)
+                    intent.putExtra(USER_BD, userItem.user.bd)
+                    intent.putExtra(USER_PIC, userItem.user.imageuurl)
+                    startActivity(intent)
+
+                    finish()
+                }
+
                 patient_view.adapter = adapter
             }
 
@@ -62,7 +84,7 @@ class List_patient : AppCompatActivity() {
 class UserItem(val user: sentToDbpatient): Item<ViewHolder>(){
     override fun bind(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.name_text.text = user.name
-
+        viewHolder.itemView.lastname_text.text = user.lastname
         Picasso.get().load(user.imageuurl).into(viewHolder.itemView.image_list)
     }
 

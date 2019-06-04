@@ -1,11 +1,9 @@
 package com.example.prototype3
 
 import android.app.Activity
-import android.content.ContentResolver
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
-import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
 import android.provider.MediaStore
 import android.util.Log
@@ -15,7 +13,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_girl_input.*
-import org.jetbrains.anko.startActivityForResult
 import java.util.*
 
 
@@ -110,7 +107,7 @@ class Detail_input : AppCompatActivity() {
 
             selectedPhotoUri = data.data
             val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectedPhotoUri)
-            after_image_select.setImageBitmap(bitmap)
+            image_detail.setImageBitmap(bitmap)
             img_p_upload.alpha = 0f
 
 
