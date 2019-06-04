@@ -67,7 +67,7 @@ class Detail_input : AppCompatActivity() {
 
             return
         }else{
-            val intent = Intent(this, span_symptom::class.java)
+            val intent = Intent(this, Symptom::class.java)
             imageUpload()
             startActivity(intent)
         }

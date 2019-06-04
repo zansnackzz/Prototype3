@@ -104,5 +104,5 @@
             app:layout_constraintBottom_toBottomOf="@+id/img_p_upload"
             app:layout_constraintStart_toStartOf="@+id/img_p_upload"
             app:layout_constraintTop_toTopOf="@+id/img_p_upload" android:id="@+id/image_detail"
-            android:rotation="270"/>
+            android:rotation="0"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
