@@ -12,6 +12,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Status_Activity">
+        </activity>
+        <activity android:name=".SymptommActivity">
+        </activity>
         <activity android:name=".Alertparkinson">
         </activity>
         <activity android:name=".Alerttime">
@@ -23,8 +27,6 @@
         <activity android:name=".Alertstroke">
         </activity>
         <activity android:name=".Alertdisease">
-        </activity>
-        <activity android:name=".SymptommActivity">
         </activity>
         <activity android:name=".Symptom">
         </activity>
