@@ -8,24 +8,14 @@
         tools:context=".Detail_Activity">
 
     <TextView
-            android:text="จัดการระบบแจ้งเตือน"
-            android:layout_width="187dp"
-            android:layout_height="32dp"
-            android:id="@+id/textView14" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/image_detail" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.907"
-            android:textSize="18sp" android:textColor="#000000" app:layout_constraintHorizontal_bias="0.573"
-            android:textAlignment="center"/>
-    <TextView
             android:text="ประเมินการรักษา"
             android:layout_width="155dp"
             android:layout_height="30dp"
             android:id="@+id/textView17" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintTop_toBottomOf="@+id/image_detail" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.797"
-            android:textSize="18sp" android:textColor="#000000" app:layout_constraintHorizontal_bias="0.544"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.925"
+            android:textSize="18sp" android:textColor="#000000" app:layout_constraintHorizontal_bias="0.533"
             android:textAlignment="center"/>
     <TextView
             android:text="เบอร์ติดต่อผู้ดูแล :"
@@ -89,11 +79,12 @@
             android:layout_height="150dp"
             android:layout_width="150dp"
             android:id="@+id/image_detail"
-            android:rotation="270" app:layout_constraintStart_toStartOf="parent"
+            android:rotation="0" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintVertical_bias="0.014"/>
+            app:layout_constraintVertical_bias="0.014"
+    />
     <TextView
             android:text="วัน เดือน ปีเกิด :"
             android:layout_width="123dp"
@@ -161,4 +152,12 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.069"
             android:textSize="18sp" app:layout_constraintHorizontal_bias="0.015" android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@+id/textView7"/>
+    <Button
+            android:text="จัดการระบบแจ้งเตือน"
+            android:layout_width="207dp"
+            android:layout_height="61dp"
+            android:id="@+id/alert_btn" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView17" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

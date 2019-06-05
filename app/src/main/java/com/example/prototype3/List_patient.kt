@@ -62,7 +62,6 @@ class List_patient : AppCompatActivity() {
                     intent.putExtra(USER_LASTNAME, userItem.user.lastname)
                     intent.putExtra(USER_ADD, userItem.user.address)
                     intent.putExtra(USER_NAME_CARE, userItem.user.namecare)
-                    intent.putExtra(USER_ADD_CARE, userItem.user.addresscare)
                     intent.putExtra(USER_TEL_CARE, userItem.user.tel)
                     intent.putExtra(USER_BD, userItem.user.bd)
                     intent.putExtra(USER_PIC, userItem.user.imageuurl)
@@ -85,7 +84,7 @@ class UserItem(val user: sentToDbpatient): Item<ViewHolder>(){
     override fun bind(viewHolder: ViewHolder, position: Int) {
         viewHolder.itemView.name_text.text = user.name
         viewHolder.itemView.lastname_text.text = user.lastname
-        Picasso.get().load(user.imageuurl).into(viewHolder.itemView.image_list)
+        Picasso.get().load(user.imageuurl).rotate(90f).into(viewHolder.itemView.image_list)
     }
 
     override fun getLayout(): Int {

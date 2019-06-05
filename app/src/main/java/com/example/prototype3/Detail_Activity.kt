@@ -1,10 +1,12 @@
 package com.example.prototype3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
+import kotlinx.android.synthetic.main.activity_alertstroke.*
 import kotlinx.android.synthetic.main.activity_detail_.*
 import kotlinx.android.synthetic.main.patien_c_patien.view.*
 
@@ -32,8 +34,12 @@ class Detail_Activity : AppCompatActivity() {
         tel_care_detail.setText(tel_de)
         Picasso.get().load(pic_de).into(image_detail)
 
-    }
+        alert_btn.setOnClickListener{
+            val intent = Intent(this, Alertdisease::class.java)
+            startActivity(intent)
 
+    }
+}
 }
 
 

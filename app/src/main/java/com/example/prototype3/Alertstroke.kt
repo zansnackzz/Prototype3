@@ -3,15 +3,15 @@ package com.example.prototype3
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_span_symptom.*
+import kotlinx.android.synthetic.main.activity_alertstroke.*
 
-class span_symptomtwo : AppCompatActivity() {
+class Alertstroke : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_span_symptomtwo)
-        nexttwo_btn.setOnClickListener {
-            val intent = Intent(this, span_symptomthree::class.java)
+        setContentView(R.layout.activity_alertstroke)
+        Storkeone_btn.setOnClickListener{
+            val intent = Intent(this, Alerttime::class.java)
             startActivity(intent)
         }
     }

@@ -17,14 +17,14 @@
                 <TextView
                         android:text="แบบประเมินคัดกรอง Barthel ADL"
                         android:layout_width="match_parent"
-                        android:layout_height="31dp" android:id="@+id/textView" android:layout_weight="1"/>
+                        android:layout_height="44dp" android:id="@+id/textView" android:layout_weight="1"/>
                 <TextView
                         android:text="1. Feeding (รับประทานอาหารเมื่อเตรียมสำรับไว้ให้เรียบร้อยต่อหน้า)"
                         android:layout_width="wrap_content"
                         android:layout_height="42dp" android:id="@+id/textView5" android:layout_weight="1"/>
                 <RadioButton
                         android:text="0. ไม่สามารถตักอาหารเข้าปากได้ ต้องมีคนป้อนให้"
-                        android:layout_width="wrap_content"
+                        android:layout_width="346dp"
                         android:layout_height="wrap_content" android:id="@+id/radioButton2" android:layout_weight="1"/>
                 <RadioButton
                         android:text="1. ตักอาหารเองได้แต่ต้องมีคนช่วย เช่น ช่วยใช้ช้อนตักเตรียมไว้ให้หรือตัดเป็นเล็กๆไว้ล่วงหน้า"

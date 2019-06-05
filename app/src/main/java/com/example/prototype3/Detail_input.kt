@@ -8,6 +8,8 @@ import android.net.Uri
 import android.provider.MediaStore
 import android.util.Log
 import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
@@ -16,8 +18,7 @@ import kotlinx.android.synthetic.main.activity_girl_input.*
 import java.util.*
 
 
-class Detail_input : AppCompatActivity() {
-    lateinit var nnamepatient: EditText
+class Detail_input : AppCompatActivity() {lateinit var nnamepatient: EditText
     lateinit var llastnamepatient: EditText
     lateinit var bbd: EditText
     lateinit var aaadress: EditText
@@ -43,9 +44,9 @@ class Detail_input : AppCompatActivity() {
             startActivityForResult(intent,0)
         }
         spangirl_btn.setOnClickListener {
-           checkblank()
+            checkblank()
 
-          //sentDb()
+            //sentDb()
 
 
         }
@@ -136,8 +137,6 @@ class Detail_input : AppCompatActivity() {
             }
 
     }
-
-
 }
 
 
