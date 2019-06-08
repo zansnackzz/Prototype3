@@ -21,7 +21,7 @@ class SymptommActivity : AppCompatActivity() {
 
         Rg1.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB1_1 -> r = 0
+                R.id.rB1_1 -> r = r+0
                 R.id.rB1_2 -> r = r+1
                 R.id.rB1_3 -> r = r+2
             }
@@ -32,7 +32,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg2.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB2_1 -> r = 0
+                R.id.rB2_1 -> r = r+0
                 R.id.rB2_2 -> r = r+1
 
             }
@@ -43,7 +43,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg3.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB3_1 -> r = 0
+                R.id.rB3_1 -> r = r+0
                 R.id.rB3_2 -> r = r+1
                 R.id.rB3_3 -> r = r+2
                 R.id.rB3_4 -> r = r+3
@@ -55,7 +55,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg4.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB4_1 -> r = 0
+                R.id.rB4_1 -> r = r+0
                 R.id.rB4_2 -> r = r+1
                 R.id.rB4_3 -> r = r+2
             }
@@ -66,7 +66,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg5.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB5_1 -> r = 0
+                R.id.rB5_1 -> r = r+0
                 R.id.rB5_2 -> r = r+1
                 R.id.rB5_3 -> r = r+2
             }
@@ -77,7 +77,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg6.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB6_1 -> r = 0
+                R.id.rB6_1 -> r = r+0
                 R.id.rB6_2 -> r = r+1
 
             }
@@ -88,7 +88,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg7.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB7_1 -> r = 0
+                R.id.rB7_1 -> r = r+0
                 R.id.rB7_2 -> r = r+1
                 R.id.rB7_3 -> r = r+2
             }
@@ -99,7 +99,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg8.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB8_1 -> r = 0
+                R.id.rB8_1 -> r = r+0
                 R.id.rB8_2 -> r = r+1
                 R.id.rB8_3 -> r = r+2
                 R.id.rB8_4 -> r = r+3
@@ -111,7 +111,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg9.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB9_1 -> r = 0
+                R.id.rB9_1 -> r = r+0
                 R.id.rB9_2 -> r = r+1
                 R.id.rB9_3 -> r = r+2
             }
@@ -122,7 +122,7 @@ class SymptommActivity : AppCompatActivity() {
         })
         Rg10.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
-                R.id.rB10_1 -> r = 0
+                R.id.rB10_1 -> r = r+0
                 R.id.rB10_2 -> r = r+1
                 R.id.rB10_3 -> r = r+2
             }
