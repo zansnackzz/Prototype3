@@ -183,7 +183,7 @@ class SymptommActivity : AppCompatActivity() {
                 20-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
                 else -> "Not Matched"
             }
-            val intent = Intent(this,Status_Activity::class.java)
+            val intent = Intent(this,Detail_Show::class.java) //Status_Activity
             intent.putExtra(RESULLT,str)
             intent.putExtra(RESULLTT,strr)
             startActivity(intent)

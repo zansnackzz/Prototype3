@@ -1,6 +1,7 @@
 package com.example.prototype3
 
 import android.content.Intent
+import android.net.MailTo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -12,7 +13,7 @@ class Splash_screen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         Handler().postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,Detail_input_Activity::class.java) //MainActivity
             startActivity(intent)
         },5000)
 

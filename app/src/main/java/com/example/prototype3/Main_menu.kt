@@ -20,8 +20,9 @@ class Main_menu : AppCompatActivity() {
 
 
         input_new_btn.setOnClickListener {
-            val intent = Intent(this,Detail_input::class.java)
+            val intent = Intent(this,Detail_input_Activity::class.java)
             startActivity(intent)
+            //Detail_input
         }
     }
 }

@@ -12,6 +12,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Detail_Show">
+        </activity>
+        <activity android:name=".Detail_input_Activity">
+        </activity>
         <activity android:name=".Status_Activity">
         </activity>
         <activity android:name=".SymptommActivity">
