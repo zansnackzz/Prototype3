@@ -8,6 +8,15 @@ import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.activity_alertstroke.*
 import kotlinx.android.synthetic.main.activity_detail_.*
+import kotlinx.android.synthetic.main.activity_detail_.add_detail
+import kotlinx.android.synthetic.main.activity_detail_.alert_btn
+import kotlinx.android.synthetic.main.activity_detail_.bd_detail
+import kotlinx.android.synthetic.main.activity_detail_.image_detail
+import kotlinx.android.synthetic.main.activity_detail_.lastname_detail
+import kotlinx.android.synthetic.main.activity_detail_.name_care_detail
+import kotlinx.android.synthetic.main.activity_detail_.name_detail
+import kotlinx.android.synthetic.main.activity_detail_.tel_care_detail
+import kotlinx.android.synthetic.main.activity_detail__show.*
 import kotlinx.android.synthetic.main.patien_c_patien.view.*
 
 class Detail_Activity : AppCompatActivity() {
