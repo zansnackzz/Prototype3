@@ -57,7 +57,7 @@ class List_patient : AppCompatActivity() {
 
                 adapter.setOnItemClickListener{ item, view ->
                     val userItem = item as UserItem
-                    val intent = Intent(view.context, Detail_Activity::class.java)
+                    val intent = Intent(view.context, Detail_Show::class.java)
                     intent.putExtra(USER_NAME, userItem.user.name)
                     intent.putExtra(USER_LASTNAME, userItem.user.lastname)
                     intent.putExtra(USER_ADD, userItem.user.address)

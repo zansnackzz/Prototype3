@@ -25,7 +25,8 @@ class Detail_input : AppCompatActivity() {lateinit var nnamepatient: EditText
     lateinit var aaadresscare: EditText
     lateinit var nnamecare: EditText
     lateinit var ttelcare: EditText
-
+    lateinit var radioGroup: RadioGroup
+    lateinit var agee: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_girl_input)
@@ -33,10 +34,12 @@ class Detail_input : AppCompatActivity() {lateinit var nnamepatient: EditText
         nnamepatient = findViewById(R.id.name_patient)
         llastnamepatient = findViewById(R.id.lastname_patient)
         bbd = findViewById(R.id.bd_patient)
-        aaadress = findViewById(R.id.address_patient)
+        aaadress = findViewById(R.id.address_patient2)
         aaadresscare = findViewById(R.id.addresscare_patient)
         nnamecare = findViewById(R.id.namecare_patient)
         ttelcare = findViewById(R.id.telcare_patient)
+        radioGroup = findViewById(R.id.radioGroup)
+        agee = findViewById(R.id.age_patient5)
 
         img_p_upload.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)
@@ -79,16 +82,19 @@ class Detail_input : AppCompatActivity() {lateinit var nnamepatient: EditText
         val lllastnamepatient = llastnamepatient.text.toString().trim()
         val bbbd = bbd.text.toString().trim()
         val aaaadress = aaadress.text.toString().trim()
-        val aaaadresscare = aaadresscare.text.toString().trim()
+
         val nnnamecare = nnamecare.text.toString().trim()
         val tttelcare = ttelcare.text.toString().trim()
-
+        val valuetwo = radioGroup.checkedRadioButtonId
+        val rb = findViewById<RadioButton>(valuetwo)
+        val rbb = rb.text.toString().trim()
+        val aagee = agee.text.toString()
 
         val userId = FirebaseAuth.getInstance().uid
         val ref = FirebaseDatabase.getInstance().getReference("/Patient/$userId")
 
         val patientId = ref.push().key
-        val patient = sentToDbpatient(patientId.toString(),nnnamepatient,lllastnamepatient,bbbd,aaaadress,aaaadresscare,nnnamecare,tttelcare,imageuurl)
+        val patient = sentToDbpatient(patientId.toString(),nnnamepatient,lllastnamepatient,bbbd,aaaadress,nnnamecare,tttelcare,rbb,aagee,imageuurl)
 
         ref.child(patientId.toString()).setValue(patient).addOnCompleteListener {
 

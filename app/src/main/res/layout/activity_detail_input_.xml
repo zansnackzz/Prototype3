@@ -34,43 +34,42 @@
                     app:layout_constraintStart_toStartOf="@+id/img_p_upload2"
                     app:layout_constraintTop_toTopOf="@+id/img_p_upload2" android:id="@+id/image_detail2"
                     android:rotation="0"
-                    android:layout_marginBottom="8dp" app:layout_constraintEnd_toEndOf="@+id/img_p_upload2"/>
+                    android:layout_marginBottom="3dp" app:layout_constraintEnd_toEndOf="@+id/img_p_upload2"/>
             <EditText
                     android:layout_width="200dp"
                     android:layout_height="45dp"
                     android:inputType="textPersonName"
-                    android:text="ชื่อ"
                     android:ems="10"
-                    android:id="@+id/editText" android:layout_marginEnd="8dp"
+                    android:id="@+id/name_patient2" android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.53"
-                    app:layout_constraintTop_toBottomOf="@+id/img_p_upload2" android:layout_marginTop="8dp"
-                    app:layout_constraintVertical_bias="0.047"/>
+                    app:layout_constraintTop_toBottomOf="@+id/img_p_upload2"
+                    app:layout_constraintVertical_bias="0.047" android:hint="ชื่อ" android:textColorHint="#9A9A9A"/>
             <EditText
                     android:layout_width="200dp"
                     android:layout_height="45dp"
                     android:inputType="textPersonName"
-                    android:text="นามสกุล"
                     android:ems="10"
-                    android:id="@+id/editText4"
+                    android:id="@+id/lastname_patient2"
                     app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.53"
-                    app:layout_constraintTop_toBottomOf="@+id/editText" app:layout_constraintVertical_bias="0.0"
-                    android:layout_marginTop="8dp"/>
+                    app:layout_constraintTop_toBottomOf="@+id/name_patient2" app:layout_constraintVertical_bias="0.0"
+                    android:layout_marginTop="8dp" android:hint="นามสกุล" android:textColorHint="#9A9A9A"/>
             <TextView
                     android:text="ปี"
                     android:layout_width="40dp"
-                    android:layout_height="29dp" android:id="@+id/textView8"
+                    android:layout_height="29dp" android:id="@+id/age_patient5"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editText4"
+                    app:layout_constraintTop_toBottomOf="@+id/lastname_patient2"
                     app:layout_constraintVertical_bias="0.0" android:textSize="18sp" android:textAlignment="center"
                     android:textColor="#FD070707" android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/editText6"
-                    app:layout_constraintHorizontal_bias="0.0"/>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView16" android:layout_marginStart="8dp"
+                    app:layout_constraintHorizontal_bias="0.468"/>
             <TextView
                     android:text="เพศ"
                     android:layout_width="59dp"
@@ -79,72 +78,100 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editText4" app:layout_constraintHorizontal_bias="0.317"
-                    app:layout_constraintVertical_bias="0.003" android:textSize="18sp" android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@+id/lastname_patient2" app:layout_constraintHorizontal_bias="0.339"
+                    app:layout_constraintVertical_bias="0.0" android:textSize="18sp"
+                    android:textAlignment="center"
                     android:textColor="#FD070707"/>
             <RadioGroup
                     android:layout_width="116dp"
                     android:layout_height="67dp" app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintHorizontal_bias="0.46"
-                    android:id="@+id/radioGroup3">
+                    app:layout_constraintTop_toBottomOf="@+id/age_patient5" app:layout_constraintHorizontal_bias="0.46"
+                    android:id="@+id/radioGroup77">
                 <RadioButton
                         android:text="ชาย"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/radioButton7" android:layout_weight="1"/>
+                        android:layout_height="wrap_content" android:id="@+id/manbutton" android:layout_weight="1"/>
                 <RadioButton
                         android:text="หญิง"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/radioButton8" android:layout_weight="1"/>
+                        android:layout_height="wrap_content" android:id="@+id/girlbutton" android:layout_weight="1"/>
             </RadioGroup>
             <EditText
                     android:layout_width="40dp"
-                    android:layout_height="35dp"
+                    android:layout_height="38dp"
                     android:inputType="textPersonName"
-                    android:text="อายุ"
                     android:ems="10"
-                    android:id="@+id/editText6"
+                    android:id="@+id/age_patient"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editText4" android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/editText7" app:layout_constraintVertical_bias="0.0"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/address_patient2"
                     app:layout_constraintStart_toEndOf="@+id/textView16" android:layout_marginStart="8dp"
-                    app:layout_constraintHorizontal_bias="0.202"/>
+                    app:layout_constraintHorizontal_bias="0.29" android:hint="อายุ" android:textColorHint="#9A9A9A"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.85"/>
             <EditText
                     android:layout_width="200dp"
                     android:layout_height="45dp"
                     android:inputType="textPersonName"
-                    android:text="ที่อยู่"
                     android:ems="10"
-                    android:id="@+id/editText7"
-                    app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
+                    android:id="@+id/address_patient2"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup77"
                     android:layout_marginStart="8dp"
                     app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toTopOf="@+id/editText8" android:layout_marginTop="8dp"/>
+                    app:layout_constraintBottom_toTopOf="@+id/bd_patient2" android:layout_marginTop="5dp"
+                    android:hint="ที่อยู่" app:layout_constraintHorizontal_bias="0.497"/>
             <EditText
                     android:layout_width="200dp"
                     android:layout_height="45dp"
                     android:inputType="textPersonName"
-                    android:text="หมายเลขโทรศัพท์ผู้ดูแล"
                     android:ems="10"
-                    android:id="@+id/editText8"
-                    app:layout_constraintTop_toBottomOf="@+id/editText7" android:layout_marginEnd="8dp"
+                    android:id="@+id/bd_patient2"
+                    app:layout_constraintTop_toBottomOf="@+id/address_patient2" android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/spinner"
-                    android:textAlignment="center"/>
+                    android:hint="วันเดือนปีเกิด"
+                    app:layout_constraintHorizontal_bias="0.497" android:layout_marginBottom="1dp"
+                    app:layout_constraintBottom_toTopOf="@+id/namecare_patient2" android:layout_marginTop="8dp"/>
+            <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/namecare_patient2"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:hint="ชื่อผู้ดูแล"
+                    app:layout_constraintHorizontal_bias="0.502" app:layout_constraintTop_toBottomOf="@+id/bd_patient2"
+                    android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/telcare_patient2"/>
+            <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/telcare_patient2"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:hint="หมายเลขโทรศัพท์ผู้ดูแล"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/namecare_patient2"
+                    app:layout_constraintBottom_toTopOf="@+id/spinner" app:layout_constraintVertical_bias="1.0"/>
             <Spinner
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:id="@+id/spinner" app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.502"
-                    app:layout_constraintTop_toBottomOf="@+id/editText8"
+                    app:layout_constraintHorizontal_bias="0.497"
                     android:scrollbarSize="6dp" app:layout_constraintBottom_toTopOf="@+id/spinner2"
-                    android:layout_marginBottom="2dp"/>
+                    android:layout_marginBottom="8dp" app:layout_constraintTop_toBottomOf="@+id/telcare_patient2"
+                    android:layout_marginTop="8dp"/>
             <Spinner
-                    android:layout_width="200dp"
+                    android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:id="@+id/spinner2"
                     android:scrollbarSize="6dp"
@@ -152,7 +179,8 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/spinner"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="3dp" android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toTopOf="@+id/detail_input_DB"/>
             <TextView
                     android:text="ประเมินภาวะผู้ป่วย"
                     android:layout_width="200dp"
@@ -162,9 +190,9 @@
                     android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="8dp"
                     app:layout_constraintTop_toBottomOf="@+id/spinner2" android:textSize="18sp"
-                    android:layout_marginTop="5dp" android:textAlignment="center"
-                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="3dp"
-                    android:textColor="#020202"/>
+                    android:layout_marginTop="8dp" android:textAlignment="center"
+                    android:textColor="#020202"
+            />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

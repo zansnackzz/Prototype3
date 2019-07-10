@@ -11,12 +11,12 @@ class Status_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_status_)
-        val resullt = intent.getStringExtra(SymptommActivity.RESULLT)
-        val resulltt = intent.getStringExtra(SymptommActivity.RESULLTT)
+      //  val resullt = intent.getStringExtra(SymptommActivity.RESULLT)
+       // val resulltt = intent.getStringExtra(SymptommActivity.RESULLTT)
 
-        status_patian.setText(resullt)
+     //  status_patian.setText(resullt)
 
-        status_patian_detail.setText(resulltt)
+      //  status_patian_detail.setText(resulltt)
     }
 }
 

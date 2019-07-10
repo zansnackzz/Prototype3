@@ -4,7 +4,7 @@
           package="com.example.prototype3">
 
     <dist:module dist:instant="true"/>
-
+    <uses-permission android:name="android.permission.SET_ALARM"/>
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -12,6 +12,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+
+        <activity android:name=".NotificateActivity">
+        </activity>
         <activity android:name=".Detail_Show">
         </activity>
         <activity android:name=".Detail_input_Activity">
@@ -20,54 +23,27 @@
         </activity>
         <activity android:name=".SymptommActivity">
         </activity>
-        <activity android:name=".Alertparkinson">
-        </activity>
-        <activity android:name=".Alerttime">
-        </activity>
-        <activity android:name=".Alertparalysis">
-        </activity>
-        <activity android:name=".alertparkinson">
-        </activity>
-        <activity android:name=".Alertstroke">
-        </activity>
-        <activity android:name=".Alertdisease">
-        </activity>
-        <activity android:name=".Symptom">
-        </activity>
-        <activity android:name=".Detail_Activity">
-        </activity>
+
         <activity android:name=".List_patient">
         </activity>
-        <activity android:name=".DBinput.Listview_p_n">
-        </activity>
-        <activity android:name=".Listview_patient_new">
-        </activity>
-        <activity android:name=".Listview_patient">
-        </activity>
-        <activity android:name=".span_symptomtwo">
-        </activity>
-        <activity android:name=".span_symptomthree">
-        </activity>
-        <activity android:name=".span_sympton2">
-        </activity>
-        <activity android:name=".span_symptom">
-        </activity>
+
+
+
+
+
+
         <activity android:name=".Detail_input">
         </activity>
-        <activity android:name=".Man_input">
-        </activity>
-        <activity android:name=".Input_detail">
-        </activity>
+
+
+
         <activity android:name=".Main_menu">
         </activity>
-        <activity android:name=".DBinput.Dbshow">
-        </activity>
-        <activity android:name=".Usee">
-        </activity>
+
+
         <activity android:name=".Register_acc">
         </activity>
-        <activity android:name=".Mainmenu">
-        </activity>
+
         <activity
                 android:name=".Splash_screen"
                 android:noHistory="true"
@@ -80,6 +56,177 @@
         </activity>
         <activity android:name=".MainActivity">
         </activity>
+
+
+        <receiver
+                android:name=".Noti.AlarmReceiver"
+                android:enabled="true" />
+
+        <service
+                android:name=".Noti.NotificationService"
+                android:enabled="true" />
+
+        <activity
+                android:name=".Noti.ResultActivity"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name="com.example.prototype3.PL.Paralysiss.ParalysisS3AR"
+                android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss.ParalysisS1NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss.ParalysisS1RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+            android:name="com.example.prototype3.PL.Paralysiss2.ParalysisS2AR"
+            android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss2.ParalysisS2NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss2.ParalysisS2RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name="com.example.prototype3.PL.Paralysiss3.ParalysisS3AR"
+                android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss3.ParalysisS3NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss3.ParalysisS3RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name="com.example.prototype3.PL.Paralysiss4.ParalysisS4AR"
+                android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss4.ParalysisS4NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss4.ParalysisS4RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name="com.example.prototype3.PL.Paralysiss5.ParalysisS5AR"
+                android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss5.ParalysisS5NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss5.ParalysisS5RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name="com.example.prototype3.PL.Paralysiss6.ParalysisS6AR"
+                android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss6.ParalysisS6NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss6.ParalysisS6RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name="com.example.prototype3.PL.Paralysiss7.ParalysisS7AR"
+                android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss7.ParalysisS7NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss7.ParalysisS7RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name="com.example.prototype3.PL.Paralysiss8.ParalysisS8AR"
+                android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss8.ParalysisS8NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss8.ParalysisS8RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name="com.example.prototype3.PL.Paralysiss9.ParalysisS9AR"
+                android:enabled="true" />
+
+        <service
+                android:name="com.example.prototype3.PL.Paralysiss9.ParalysisS9NS"
+                android:enabled="true" />
+
+        <activity android:name="com.example.prototype3.PL.Paralysiss9.ParalysisS9RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name=".Parkinson.ParkinsonS1AR"
+                android:enabled="true" />
+
+        <service
+                android:name=".Parkinson.ParkinsonS1NS"
+                android:enabled="true" />
+
+        <activity android:name=".Parkinson.ParkinsonS1RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+        ////////////////////////////////////////////////////////////////////
+        <receiver
+                android:name=".Vascular.VascularS1AR"
+                android:enabled="true" />
+
+        <service
+                android:name=".Vascular.VascularS1NS"
+                android:enabled="true" />
+
+        <activity android:name=".Vascular.VascularS1RA"
+                  android:excludeFromRecents="true"
+                  android:label=".Noti@string/notification"
+                  android:launchMode="singleTask"
+                  android:taskAffinity="" />
+
     </application>
 
 </manifest>

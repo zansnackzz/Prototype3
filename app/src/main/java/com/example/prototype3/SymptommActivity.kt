@@ -6,7 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.RadioGroup
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_register_acc.*
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_symptomm.*
 
 class SymptommActivity : AppCompatActivity() {
@@ -18,6 +19,17 @@ class SymptommActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_symptomm)
 
+        val name_de = intent.getStringExtra(Detail_input_Activity.PATIENT_NAME)
+        val lastname_de = intent.getStringExtra(Detail_input_Activity.PATIENT_LASTNAME)
+        val bd_de = intent.getStringExtra(Detail_input_Activity.PATIENT_BD)
+        val add_de = intent.getStringExtra(Detail_input_Activity.PATIENT_ADD)
+        val name_care_de = intent.getStringExtra(Detail_input_Activity.PATIENT_NAME_CARE)
+        val tel_de = intent.getStringExtra(Detail_input_Activity.PATIENT_TEL_CARE)
+        val age_de = intent.getStringExtra(Detail_input_Activity.PATIENT_AGE)
+        val pic_de = intent.getStringExtra(Detail_input_Activity.PATIENT_PIC)
+        val gender = intent.getStringExtra(Detail_input_Activity.PATIENT_GENDER)
+        val patient_id = intent.getStringExtra(Detail_input_Activity.PATIENT_ID)
+        Log.d("Detail_input","$patient_id")
 
         Rg1.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener{radioGroup, i ->
             when(i){
@@ -136,57 +148,88 @@ class SymptommActivity : AppCompatActivity() {
         btn_save.setOnClickListener{
             Toast.makeText(this,"R = $r",Toast.LENGTH_SHORT).show()
             val str :String = when(r){
-                0-> "อยู่ในสภาวะที่ 3"
-                1-> "อยู่ในสภาวะที่ 3"
-                2-> "อยู่ในสภาวะที่3"
-                3-> "อยู่ในสภาวะที่ 3"
-                4-> "อยู่ในสภาวะที่ 3"
-                5-> "อยู่ในสภาวะที่ 2"
-                6-> "อยู่ในสภาวะที่ 2"
-                7-> "อยู่ในสภาวะที่ 2"
-                8-> "อยู่ในสภาวะที่ 2"
-                9-> "อยู่ในสภาวะที่ 1"
-                10-> "อยู่ในสภาวะที่ 1"
-                11-> "อยู่ในสภาวะที่ 1"
-                12-> "อยู่ในสภาวะที่ 1"
-                13-> "อยู่ในสภาวะที่ 1"
-                14-> "อยู่ในสภาวะที่ 1"
-                15-> "อยู่ในสภาวะที่ 1"
-                16-> "อยู่ในสภาวะที่ 1"
-                17-> "อยู่ในสภาวะที่ 1"
-                18-> "อยู่ในสภาวะที่ 1"
-                19-> "อยู่ในสภาวะที่ 1"
-                20-> "อยู่ในสภาวะที่ 1"
+                0-> "สภาวะที่ 3"
+                1-> "สภาวะที่ 3"
+                2-> "สภาวะที่ 3"
+                3-> "สภาวะที่ 3"
+                4-> "สภาวะที่ 3"
+                5-> "สภาวะที่ 2"
+                6-> "สภาวะที่ 2"
+                7-> "สภาวะที่ 2"
+                8-> "สภาวะที่ 2"
+                9-> "สภาวะที่ 1"
+                10-> "สภาวะที่ 1"
+                11-> "สภาวะที่ 1"
+                12-> "สภาวะที่ 1"
+                13-> "สภาวะที่ 1"
+                14-> "สภาวะที่ 1"
+                15-> "สภาวะที่ 1"
+                16-> "สภาวะที่ 1"
+                17-> "สภาวะที่ 1"
+                18-> "สภาวะที่ 1"
+                19-> "สภาวะที่ 1"
+                20-> "สภาวะที่ 1"
                 else -> "Not Matched"
             }
             val strr :String = when(r){
-                0-> "คือ สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
-                1-> "คือ สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
-                2-> "คือ สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
-                3-> "คือ สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
-                4-> "คือ สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
-                5-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้บ้าง"
-                6-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้บ้าง"
-                7-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้บ้าง"
-                8-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้บ้าง"
-                9-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                10-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                11-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                12-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                13-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                14-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                15-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                16-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                17-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                18-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                19-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
-                20-> "คือ สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                0-> "สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
+                1-> "สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
+                2-> "สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
+                3-> "สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
+                4-> "สภาวะที่ผู้ป่วยไม่สามารถช่วยเหลือตัวเองได้เลย"
+                5-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้บ้าง"
+                6-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้บ้าง"
+                7-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้บ้าง"
+                8-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้บ้าง"
+                9-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                10-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                11-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                12-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                13-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                14-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                15-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                16-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                17-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                18-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                19-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
+                20-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
                 else -> "Not Matched"
             }
-            val intent = Intent(this,Detail_Show::class.java) //Status_Activity
+           val rresult = r.toString()
+           val detailshort = str
+           val detaillong = strr
+           val patientID = patient_id
+           val ref = FirebaseDatabase.getInstance().getReference("/Status/Day1/$patientID")
+
+           val statusID = ref.push().key
+           val statuss = sentToStatusDB(statusID.toString(),rresult,detailshort,detaillong)
+
+           ref.child(statusID.toString()).setValue(statuss).addOnCompleteListener{
+               Log.d("Status_input","Upload All DATA SS")
+               Log.d("Status_input","R = $rresult")
+               Log.d("Status_input","DetailShort = $detailshort")
+               Log.d("Status_input","DetailLong = $detaillong")
+               Log.d("Status_input","PatientID = $patientID")*
+               Log.d("Status_input","Patient_id = $patient_id")
+               Log.d("Status_input","StatusID = $statusID")
+               Toast.makeText(this,"บันทึกสำเร็จ", Toast.LENGTH_SHORT).show()
+
+           }
+            val intent = Intent(this, Detail_Show::class.java)
+            intent.putExtra(PATIENT_ID, patient_id)
+            intent.putExtra(PATIENT_NAME, name_de)
+            intent.putExtra(PATIENT_LASTNAME, lastname_de)
+            intent.putExtra(PATIENT_ADD, add_de)
+            intent.putExtra(PATIENT_NAME_CARE, name_care_de)
+            intent.putExtra(PATIENT_AGE, age_de)
+            intent.putExtra(PATIENT_TEL_CARE, tel_de)
+            intent.putExtra(PATIENT_PIC, pic_de)
+            intent.putExtra(PATIENT_BD, bd_de)
+            intent.putExtra(PATIENT_GENDER, gender)
             intent.putExtra(RESULLT,str)
             intent.putExtra(RESULLTT,strr)
             startActivity(intent)
+
         }
 
 
@@ -195,10 +238,25 @@ class SymptommActivity : AppCompatActivity() {
     companion object{
         val RESULLT = "RESULLT"
         val RESULLTT = "RESULLTT"
+        val PATIENT_ID = "PATIENT_ID"
+        val PATIENT_NAME = "PATIENT_NAME"
+        val PATIENT_LASTNAME = "PATIENT_LASTNAME"
+        val PATIENT_ADD = "PATIENT_ADD"
+        val PATIENT_NAME_CARE = "PATIENT_NAME_CARE"
+        val PATIENT_AGE = "PATIENT_AGE"
+        val PATIENT_TEL_CARE = "PATIENT_TEL_CARE"
+        val PATIENT_PIC = "PATIENT_PIC"
+        val PATIENT_BD = "PATIENT_BD"
+        val PATIENT_GENDER = "PATIENT_GENDER"
     }
 }
 
 
+class sentToStatusDB(val id:String, val statusPatient: String, val detailshortStatusPatient:String, val detaillongStatusList_patient:String){
+    constructor() : this("","","","")
+}
 
 
+private fun statusUpload(){
 
+}
