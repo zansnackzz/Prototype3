@@ -208,7 +208,7 @@ class Symptomm_Old_Patient : AppCompatActivity() {
                 Log.d("Status_input","DetailShort = $detailshort")
                 Log.d("Status_input","DetailLong = $detaillong")
                 Log.d("Status_input","PatientID = $patientID")*
-
+                        Log.d("Status_input","Patient_id = $patient_id")
                 Log.d("Status_input","StatusID = $statusID")
                 Log.d("SSOOP","$status_numm AfteR $sttaresult")
                 Toast.makeText(this,"บันทึกสำเร็จ", Toast.LENGTH_SHORT).show()
