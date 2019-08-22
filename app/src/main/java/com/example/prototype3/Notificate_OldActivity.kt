@@ -1,5 +1,6 @@
 package com.example.prototype3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -155,6 +156,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคหลอดเลือด สภาวะที่ 1")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }else if (getstatus.equals(getstatus2)){
@@ -202,6 +205,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคหลอดเลือด สภาวะที่ 2")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }else if (getstatus.equals(getstatus3)){
@@ -249,6 +254,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคหลอดเลือด สภาวะที่ 3")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }
@@ -301,6 +308,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคพาร์กินสัน สภาวะที่ 1")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }else if (getstatus.equals(getstatus2)){
@@ -348,6 +357,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคพาร์กินสัน สภาวะที่ 2")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }else if (getstatus.equals(getstatus3)){
@@ -395,6 +406,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคพาร์กินสัน สภาวะที่ 3")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }
@@ -446,6 +459,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคอัมพฤกษ์-อัมพาต สภาวะที่ 1")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }else if (getstatus.equals(getstatus2)){
@@ -493,6 +508,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคอัมพฤกษ์-อัมพาต สภาวะที่ 2")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }else if (getstatus.equals(getstatus3)){
@@ -540,6 +557,8 @@ class Notificate_OldActivity : AppCompatActivity() {
                     }
                     Log.d("NAA","โรคอัมพฤกษ์-อัมพาต สภาวะที่ 3")
                     Toast.makeText(this, "บันทึกแจ้งเตือน.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this,List_patient::class.java)
+                    startActivity(intent)
                 }
 
             }

@@ -6,17 +6,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import android.net.Uri
+import android.os.Handler
 import android.provider.MediaStore
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.*
+import androidx.core.view.isEmpty
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_detail_input_.*
-import kotlinx.android.synthetic.main.activity_girl_input.*
-
 import java.util.*
 
 
@@ -44,6 +44,10 @@ class New_input_Activity : AppCompatActivity(){
         ttelcare = findViewById(R.id.telcare_patient2)
         radioGroup = findViewById(R.id.radioGroup77)
         agee = findViewById(R.id.age_patient)
+        option = findViewById(R.id.spinner) as Spinner
+        optionn = findViewById(R.id.spinner2) as Spinner
+
+
         img_p_upload2.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
@@ -52,11 +56,24 @@ class New_input_Activity : AppCompatActivity(){
 
         detail_input_DB.setOnClickListener {
             checkblank()
+            val builder = AlertDialog.Builder(this)
+            val dialogView = layoutInflater.inflate(R.layout.loading_progress,null)
+            val message = dialogView.findViewById<TextView>(R.id.message)
+            message.text = "  กำลังดำเนินการ..... "
+            builder.setView(dialogView)
+            builder.setCancelable(false)
+            val dialog = builder.create()
+            dialog.show()
+
+            Handler().postDelayed({dialog.dismiss()},6500)
+
+
+
         }
 
 
 
-        option = findViewById(R.id.spinner) as Spinner
+
 
 
         val options = arrayListOf("กรุณาเลือกโรค","โรคหลอดเลือด","โรคพาร์กินสัน","โรคอัมพฤกษ์-อัมพาต")
@@ -74,7 +91,7 @@ class New_input_Activity : AppCompatActivity(){
         }
 
 
-        optionn = findViewById(R.id.spinner2) as Spinner
+
 
         val optionss = arrayListOf("กรุณาเลือกอาการแทรกซ้อน","ภาวะกลืนลำบาก","อาการชัก","แผลกดทับ")
 
@@ -118,16 +135,19 @@ class New_input_Activity : AppCompatActivity(){
         val llastnamepatientt = llastnamepatient.text.toString()
         val bbdd = bbd.text.toString()
         val aaadresss = aaadress.text.toString()
-
+        val ooption = option.selectedItem
+        val ooptionn = optionn.selectedItem
         val nnamecaree = nnamecare.text.toString()
         val tttelcare = ttelcare.text.toString()
         val aagee = agee.text.toString()
+        val gelder = radioGroup.checkedRadioButtonId.toString()
 
-        if (nnamepatientt.isEmpty() || llastnamepatientt.isEmpty()|| bbdd.isEmpty() || aaadresss.isEmpty()|| aaadresss.isEmpty()|| nnamecaree.isEmpty()|| tttelcare.isEmpty()|| aagee.isEmpty()){
+        if (gelder.equals("-1")||ooption.equals("กรุณาเลือกโรค")||ooptionn.equals("กรุณาเลือกอาการแทรกซ้อน")||nnamepatientt.isEmpty() || llastnamepatientt.isEmpty()|| bbdd.isEmpty() || aaadresss.isEmpty()|| aaadresss.isEmpty()|| nnamecaree.isEmpty()|| tttelcare.isEmpty()|| aagee.isEmpty()){
             Toast.makeText(this, "กรุณากรอกข้อมูลให้ครบ.", Toast.LENGTH_SHORT).show()
-
+            Log.d("NNNK","$gelder")
             return
         }else{
+           Log.d("NNNK","$gelder")
             imageUpload()
         }
 

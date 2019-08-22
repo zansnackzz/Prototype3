@@ -1,10 +1,13 @@
 package com.example.prototype3
 
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.widget.RadioGroup
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_symptomm.*
@@ -112,6 +115,17 @@ class Symptomm_Old_Patient : AppCompatActivity() {
 
 
         btn_save.setOnClickListener{
+
+            val builder = AlertDialog.Builder(this)
+            val dialogView = layoutInflater.inflate(R.layout.loading_progress,null)
+            val message = dialogView.findViewById<TextView>(R.id.message)
+            message.text = "  กำลังดำเนินการ..... "
+            builder.setView(dialogView)
+            builder.setCancelable(false)
+            val dialog = builder.create()
+            dialog.show()
+            Handler().postDelayed({dialog.dismiss()},3000)
+
             Toast.makeText(this,"R = $r", Toast.LENGTH_SHORT).show()
             val str :String = when(r){
                 0-> "สภาวะที่ 3"

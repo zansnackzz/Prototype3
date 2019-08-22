@@ -1,10 +1,12 @@
 package com.example.prototype3
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.provider.MediaStore
 import android.util.Log
 import android.view.View
@@ -65,6 +67,16 @@ class Edit_Old_Patient : AppCompatActivity() {
 
         detail_input_DB.setOnClickListener {
             checkblank()
+            val builder = AlertDialog.Builder(this)
+            val dialogView = layoutInflater.inflate(R.layout.loading_progress,null)
+            val message = dialogView.findViewById<TextView>(R.id.message)
+            message.text = "  กำลังดำเนินการ..... "
+            builder.setView(dialogView)
+            builder.setCancelable(false)
+            val dialog = builder.create()
+            dialog.show()
+
+            Handler().postDelayed({dialog.dismiss()},5000)
         }
 
     }
