@@ -21,7 +21,7 @@ class Parkinson8S3NU {
 
 
             val calendar = Calendar.getInstance()
-            calendar.set(Calendar.HOUR_OF_DAY,17)
+            calendar.set(Calendar.HOUR_OF_DAY,15)
             calendar.set(Calendar.MINUTE,58)
             calendar.set(Calendar.SECOND,0)
            // calendar.timeInMillis = timeInMilliSeconds

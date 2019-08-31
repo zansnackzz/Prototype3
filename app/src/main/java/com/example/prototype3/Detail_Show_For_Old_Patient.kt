@@ -54,7 +54,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         if(status_numm.equals("1")){
 
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -74,7 +74,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("2")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -93,7 +93,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("3")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -112,7 +112,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("4")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -131,7 +131,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("5")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -150,7 +150,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("6")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -169,7 +169,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("7")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -188,7 +188,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("8")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -207,7 +207,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("9")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -226,7 +226,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("10")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -245,7 +245,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("11")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -264,7 +264,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("12")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -283,7 +283,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("13")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -302,7 +302,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("14")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -321,7 +321,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("15")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -340,7 +340,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("16")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -359,7 +359,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("17")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -378,7 +378,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("18")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -397,7 +397,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("19")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -416,7 +416,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("20")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -435,7 +435,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("21")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -454,7 +454,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("22")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -473,7 +473,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("23")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -492,7 +492,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("24")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -511,7 +511,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("25")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -530,7 +530,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("26")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -549,7 +549,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("27")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -568,7 +568,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("28")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -587,7 +587,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("29")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)
@@ -606,7 +606,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         }
                         if(status_numm.equals("30")){
                             btn_notificate.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Notificate_OldActivity::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Holdd_noti_Old_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(statussss,detailshort)
                                 startActivity(intent)

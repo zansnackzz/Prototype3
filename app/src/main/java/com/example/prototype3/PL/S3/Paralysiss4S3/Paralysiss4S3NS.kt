@@ -62,7 +62,7 @@ class Paralysiss4S3NS : IntentService("NotificationService") {
             val notifyIntent = Intent(this, Paralysiss4S3RA::class.java)
 
             val title = "โรคอัมพฤกษ์-อัมพาต"
-            val message = "10.00-12.00 น. ทำกายภาพบำบัดตามที่แพทย์สั่ง"
+            val message = "10.00-12.00 น.  รับประทานอาหาร + รับประทานยาตามที่แพทย์สั่ง"
 
             notifyIntent.putExtra("title", title)
             notifyIntent.putExtra("message", message)

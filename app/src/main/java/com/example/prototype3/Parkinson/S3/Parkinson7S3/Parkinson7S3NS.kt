@@ -62,7 +62,7 @@ class Parkinson7S3NS : IntentService("NotificationService") {
             val notifyIntent = Intent(this, Parkinson7S3RA::class.java)
 
             val title = "โรคพาร์กินสัน"
-            val message = "17.00-18.00 น.  พาผู้ป่วยออกไปเดินเล่น เพื่อให้ผู้ป่วยผ่อนคลาย "
+            val message = "14.00-16.00 น.  ทำกายภาพบำบัดหรือออกกำลังกายเบาๆตามที่แพทย์สั่ง "
 
             notifyIntent.putExtra("title", title)
             notifyIntent.putExtra("message", message)

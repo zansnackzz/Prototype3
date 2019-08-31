@@ -25,7 +25,7 @@ class ParalysisS8NU {
             //calendar.set(Calendar.HOUR_OF_DAY,19)
 
            // calendar.timeInMillis = timeInMilliSeconds
-            calendar.set(Calendar.HOUR_OF_DAY,18)
+            calendar.set(Calendar.HOUR_OF_DAY,16)
             calendar.set(Calendar.MINUTE,58)
             calendar.set(Calendar.SECOND,0)
 

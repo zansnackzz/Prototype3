@@ -52,7 +52,7 @@ class Detail_Show_For_New_Patient : AppCompatActivity() {
 
 
             alert_btn.setOnClickListener {
-                val intent = Intent(this,NotificateActivity::class.java)
+                val intent = Intent(this,Holdd_noti_Activity::class.java)
                 intent.putExtra(Ssymptommmm,symptom_symp)
                 intent.putExtra(Sstatuss,statuss_dd)
                 startActivity(intent)

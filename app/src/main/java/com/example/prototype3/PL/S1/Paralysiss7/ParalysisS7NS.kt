@@ -60,7 +60,7 @@ class ParalysisS7NS : IntentService("NotificationService") {
             val notifyIntent = Intent(this, ParalysisS7RA::class.java)
 
             val title = "โรคอัมพฤกษ์-อัมพาต"
-            val message = "ในช่วงเวลา 18.00-19.00 น.  ควรรับประทานอาหาร + รับประทานยาตามที่แพทย์สั่ง"
+            val message = "16.00-17.00 น.  หากิจกรรมและพาผู้ป่วยทำ เช่น พาผู้ป่วยดูหนัง ฟังเพลง พูดคุยกับผู้ป่วยทำให้ผูป่วยรู้สึกผ่อนคลาย"
 
             notifyIntent.putExtra("title", title)
             notifyIntent.putExtra("message", message)
