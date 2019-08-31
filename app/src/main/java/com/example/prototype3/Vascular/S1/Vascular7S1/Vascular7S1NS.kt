@@ -62,7 +62,7 @@ class Vascular7S1NS : IntentService("NotificationService") {
             val notifyIntent = Intent(this, Vascular7S1RA::class.java)
 
             val title = "โรคหลอดเลือด"
-            val message = "18.00-19.00 น.   รับประทานอาหาร + รับประทานยาตามที่แพทย์สั่ง"
+            val message = "14.00-16.00 น.  ทำกิจวัตรประจำวันตามปกติ"
 
             notifyIntent.putExtra("title", title)
             notifyIntent.putExtra("message", message)

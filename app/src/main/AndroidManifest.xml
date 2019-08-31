@@ -14,6 +14,12 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Holdd_noti_Old_Activity">
+        </activity>
+        <activity android:name=".Holdd_noti_Activity">
+        </activity>
+        <activity android:name=".NewnotifiActivity">
+        </activity>
         <activity android:name=".Symptomm_Old_Patient">
         </activity>
         <activity android:name=".Notificate_OldActivity">
@@ -206,6 +212,51 @@
                 android:taskAffinity=""/>
 
         <receiver
+                android:name=".PL.S1.Paralysiss10.ParalysisS10AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S1.Paralysiss10.ParalysisS10NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S1.Paralysiss10.ParalysisS10RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S1.Paralysiss11.ParalysisS11AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S1.Paralysiss11.ParalysisS11NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S1.Paralysiss11.ParalysisS11RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S1.Paralysiss12.ParalysisS12AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S1.Paralysiss12.ParalysisS12NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S1.Paralysiss12.ParalysisS12RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
                 android:name=".PL.S2.ParalysissS2.ParalysissS1AR"
                 android:enabled="true"/>
 
@@ -335,6 +386,51 @@
 
         <activity
                 android:name=".PL.S2.Paralysiss9S2.Paralysiss9S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss10S2.Paralysiss10S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss10S2.Paralysiss10S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss10S2.Paralysiss10S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss11S2.Paralysiss11S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss11S2.Paralysiss11S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss11S2.Paralysiss11S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S2.Paralysiss12S2.Paralysiss12S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S2.Paralysiss12S2.Paralysiss12S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S2.Paralysiss12S2.Paralysiss12S1RA"
                 android:excludeFromRecents="true"
                 android:label=".Noti@string/notification"
                 android:launchMode="singleTask"
@@ -476,6 +572,51 @@
                 android:taskAffinity=""/>
 
         <receiver
+                android:name=".PL.S3.Paralysiss10S3.Paralysiss10S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss10S3.Paralysiss10S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss10S3.Paralysiss10S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss11S3.Paralysiss11S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss11S3.Paralysiss11S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss11S3.Paralysiss11S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".PL.S3.Paralysiss12S3.Paralysiss12S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".PL.S3.Paralysiss12S3.Paralysiss12S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".PL.S3.Paralysiss12S3.Paralysiss12S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
                 android:name=".Parkinson.S1.Parkinson1S1.ParkinsonS1AR"
                 android:enabled="true"/>
 
@@ -605,6 +746,51 @@
 
         <activity
                 android:name=".Parkinson.S1.Parkinson9S1.Parkinson9S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson10S1.Parkinson10S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson10S1.Parkinson10S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson10S1.Parkinson10S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson11S1.Parkinson11S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson11S1.Parkinson11S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson11S1.Parkinson11S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S1.Parkinson12S1.Parkinson12S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S1.Parkinson12S1.Parkinson12S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S1.Parkinson12S1.Parkinson12S1RA"
                 android:excludeFromRecents="true"
                 android:label=".Noti@string/notification"
                 android:launchMode="singleTask"
@@ -746,6 +932,51 @@
                 android:taskAffinity=""/>
 
         <receiver
+                android:name=".Parkinson.S2.Parkinson10S2.Parkinson10S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson10S2.Parkinson10S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson10S2.Parkinson10S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson11S2.Parkinson11S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson11S2.Parkinson11S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson11S2.Parkinson11S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S2.Parkinson12S2.Parkinson12S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S2.Parkinson12S2.Parkinson12S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S2.Parkinson12S2.Parkinson12S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
                 android:name=".Parkinson.S3.Parkinson1S3.ParkinsonS3AR"
                 android:enabled="true"/>
 
@@ -875,6 +1106,51 @@
 
         <activity
                 android:name=".Parkinson.S3.Parkinson9S3.Parkinson9S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson10S3.Parkinson10S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson10S3.Parkinson10S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson10S3.Parkinson10S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson11S3.Parkinson11S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson11S3.Parkinson11S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson11S3.Parkinson11S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Parkinson.S3.Parkinson12S3.Parkinson12S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Parkinson.S3.Parkinson12S3.Parkinson12S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Parkinson.S3.Parkinson12S3.Parkinson12S3RA"
                 android:excludeFromRecents="true"
                 android:label=".Noti@string/notification"
                 android:launchMode="singleTask"
@@ -1016,6 +1292,51 @@
                 android:taskAffinity=""/>
 
         <receiver
+                android:name=".Vascular.S1.Vascular10S1.Vascular10S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular10S1.Vascular10S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular10S1.Vascular10S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular11S1.Vascular11S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular11S1.Vascular11S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular11S1.Vascular11S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S1.Vascular12S1.Vascular12S1AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S1.Vascular12S1.Vascular12S1NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S1.Vascular12S1.Vascular12S1RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
                 android:name=".Vascular.S2.Vascular1S2.Vascular1S2AR"
                 android:enabled="true"/>
 
@@ -1151,6 +1472,51 @@
                 android:taskAffinity=""/>
 
         <receiver
+                android:name=".Vascular.S2.Vascular10S2.Vascular10S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular10S2.Vascular10S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular10S2.Vascular10S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular11S2.Vascular11S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular11S2.Vascular11S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular11S2.Vascular11S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S2.Vascular12S2.Vascular12S2AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S2.Vascular12S2.Vascular12S2NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S2.Vascular12S2.Vascular12S2RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
                 android:name=".Vascular.S3.Vascular1S3.Vascular1S3AR"
                 android:enabled="true"/>
 
@@ -1280,6 +1646,51 @@
 
         <activity
                 android:name=".Vascular.S3.Vascular9S3.Vascular9S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular10S3.Vascular10S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular10S3.Vascular10S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular10S3.Vascular10S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular11S3.Vascular11S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular11S3.Vascular11S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular11S3.Vascular11S3RA"
+                android:excludeFromRecents="true"
+                android:label=".Noti@string/notification"
+                android:launchMode="singleTask"
+                android:taskAffinity=""/>
+
+        <receiver
+                android:name=".Vascular.S3.Vascular12S3.Vascular12S3AR"
+                android:enabled="true"/>
+
+        <service
+                android:name=".Vascular.S3.Vascular12S3.Vascular12S3NS"
+                android:enabled="true"/>
+
+        <activity
+                android:name=".Vascular.S3.Vascular12S3.Vascular12S3RA"
                 android:excludeFromRecents="true"
                 android:label=".Noti@string/notification"
                 android:launchMode="singleTask"

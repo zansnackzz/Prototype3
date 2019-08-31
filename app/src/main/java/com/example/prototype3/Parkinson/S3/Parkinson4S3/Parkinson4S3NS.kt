@@ -62,7 +62,7 @@ class Parkinson4S3NS : IntentService("NotificationService") {
             val notifyIntent = Intent(this, Parkinson4S3RA::class.java)
 
             val title = "โรคพาร์กินสัน"
-            val message = "12.00-13.00 น.  ทำกายภาพบำบัดตามที่แพทย์สั่ง"
+            val message = "11.00-12.00 น.  รับประทานอาหาร + รับประทานยาตามที่แพทย์สั่งและดูแลผู้ป่วยอย่างใกล้ชิด"
 
             notifyIntent.putExtra("title", title)
             notifyIntent.putExtra("message", message)

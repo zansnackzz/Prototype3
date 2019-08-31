@@ -62,7 +62,7 @@ class Vascular5S3NS : IntentService("NotificationService") {
             val notifyIntent = Intent(this, Vascular5S3RA::class.java)
 
             val title = "โรคหลอดเลือด"
-            val message = "15.00-16.00 น.  ทำกายภาพบำบัด เช่น ยกแขนยกขาอย่างละไม่น้อยกว่า 30 นาที เพื่อให้ข้อต่อไม่ยึด"
+            val message = "12.00-14.00 น.  ให้ผู้ป่วยได้พักผ่อน "
 
             notifyIntent.putExtra("title", title)
             notifyIntent.putExtra("message", message)

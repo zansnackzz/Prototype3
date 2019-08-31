@@ -21,7 +21,7 @@ class Vascular6S1NU {
 
 
             val calendar = Calendar.getInstance()
-            calendar.set(Calendar.HOUR_OF_DAY,16)
+            calendar.set(Calendar.HOUR_OF_DAY,12)
             calendar.set(Calendar.MINUTE,58)
             calendar.set(Calendar.SECOND,0)
            // calendar.timeInMillis = timeInMilliSeconds

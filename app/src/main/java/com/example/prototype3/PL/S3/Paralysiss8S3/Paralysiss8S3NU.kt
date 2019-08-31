@@ -22,7 +22,7 @@ class Paralysiss8S3NU {
                alarmIntent.putExtra("timestamp", timeInMilliSeconds)
 
             val calendar = Calendar.getInstance()
-            calendar.set(Calendar.HOUR_OF_DAY,18)
+            calendar.set(Calendar.HOUR_OF_DAY,16)
             calendar.set(Calendar.MINUTE,58)
             calendar.set(Calendar.SECOND,0)
                    // calendar.timeInMillis = timeInMilliSeconds
