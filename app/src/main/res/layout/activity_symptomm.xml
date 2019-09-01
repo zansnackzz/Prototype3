@@ -217,10 +217,10 @@
             </RadioGroup>
             <Button
                     android:text="บันทึก"
-                    android:layout_width="430dp"
-                    android:layout_height="wrap_content" android:id="@+id/btn_save"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp" android:id="@+id/btn_save"
                     android:layout_marginEnd="8dp"
-            />
+                    android:gravity="center" android:layout_gravity="center" android:background="@drawable/but2"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

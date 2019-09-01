@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Detail_Show_For_Old_Patient">
+        tools:context=".Detail_Show_For_Old_Patient"
+        android:background="@drawable/p2">
 
     <Button
             android:text="ประเมินการรักษา"
@@ -16,7 +17,8 @@
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_notificate" android:textSize="18sp"
             app:layout_constraintVertical_bias="0.0" android:textColorHint="#000000"
-            android:textColor="#000000" app:layout_constraintHorizontal_bias="1.0"/>
+            android:textColor="#000000" app:layout_constraintHorizontal_bias="1.0" android:background="@drawable/but8"
+            android:layout_marginTop="8dp"/>
     <Button
             android:text="จัดการระบบแจ้งเตือน"
             android:layout_width="190dp"
@@ -25,8 +27,8 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintVertical_bias="0.918" android:textSize="18sp" android:textColor="#000000"
-            android:textColorHint="#050505"/>
+            app:layout_constraintVertical_bias="0.904" android:textSize="18sp" android:textColor="#000000"
+            android:textColorHint="#050505" android:background="@drawable/but9"/>
     <TextView
             android:text="รายละเอียดสภาวะ :"
             android:layout_width="150dp"
@@ -35,7 +37,7 @@
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintHorizontal_bias="0.118" app:layout_constraintVertical_bias="0.791"
+            app:layout_constraintHorizontal_bias="0.159" app:layout_constraintVertical_bias="0.791"
             android:textSize="18sp" android:textColor="#000000"/>
     <TextView
             android:text="รายละเอียดสภาวะ :"
@@ -76,9 +78,9 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.223" android:textColor="#000000"
+            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.152" android:textColor="#000000"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.569"/>
+            app:layout_constraintVertical_bias="0.57"/>
     <TextView
             android:text="ผู้ป่วยโรค :"
             android:layout_width="160dp"
@@ -98,7 +100,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.324" android:textColor="#000000"
+            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.127" android:textColor="#000000"
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.619"/>
     <TextView
@@ -119,9 +121,9 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.223" android:textColor="#000000"
+            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.152" android:textColor="#000000"
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.664"/>
+            app:layout_constraintVertical_bias="0.674"/>
     <TextView
             android:text="เบอร์ติดต่อผู้ดูแล :"
             android:layout_width="140dp"
@@ -140,7 +142,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.216" android:textColor="#000000"
+            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.127" android:textColor="#000000"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.528"/>
     <TextView
@@ -162,13 +164,13 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.21" android:textColor="#000000"
+            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.112" android:textColor="#000000"
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.435"/>
+            app:layout_constraintVertical_bias="0.446"/>
     <TextView
             android:text="ที่อยู่ :"
-            android:layout_width="171dp"
-            android:layout_height="45dp"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
             android:id="@+id/output_address"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:textSize="18sp" android:textColor="#000000"
@@ -196,9 +198,9 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.242" android:textColor="#000000"
+            android:textSize="18sp" app:layout_constraintHorizontal_bias="0.143" android:textColor="#000000"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.399"/>
+            app:layout_constraintVertical_bias="0.4"/>
     <TextView
             android:text="อายุ :"
             android:layout_width="54dp"
@@ -208,7 +210,7 @@
             app:layout_constraintStart_toEndOf="@+id/gender_out"
             android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/gender_out" app:layout_constraintTop_toTopOf="@+id/gender_out"
-            app:layout_constraintVertical_bias="0.0" app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintVertical_bias="1.0" app:layout_constraintHorizontal_bias="0.225"/>
     <de.hdodenhof.circleimageview.CircleImageView
             android:layout_height="150dp"
             android:layout_width="150dp"
@@ -226,7 +228,7 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.247"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.132"
             app:layout_constraintVertical_bias="0.299" android:textColor="#000000" android:textSize="18sp"/>
     <TextView
             android:text="ชื่อ นามสกุล :"
@@ -252,7 +254,7 @@
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.208" app:layout_constraintVertical_bias="0.348"
+            app:layout_constraintHorizontal_bias="0.114" app:layout_constraintVertical_bias="0.348"
             android:textSize="18sp" android:textColor="#000000"/>
     <TextView
             android:text="เพศ :"
@@ -274,7 +276,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView14"/>
     <ImageView
             android:layout_width="35dp"
-            android:layout_height="35dp" app:srcCompat="@drawable/edit_buttn"
+            android:layout_height="35dp" app:srcCompat="@drawable/edit2"
             android:id="@+id/edit_bbtn" android:layout_marginTop="16dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
@@ -282,8 +284,8 @@
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.032"/>
     <ImageView
-            android:layout_width="36dp"
-            android:layout_height="43dp" app:srcCompat="@drawable/del_btnnn"
+            android:layout_width="44dp"
+            android:layout_height="40dp" app:srcCompat="@drawable/dustbino"
             android:id="@+id/del_btn" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
