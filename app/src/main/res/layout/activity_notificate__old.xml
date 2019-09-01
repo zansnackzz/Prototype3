@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Notificate_OldActivity">
+        tools:context=".Notificate_OldActivity"
+        android:background="@drawable/aa">
     <TextView
             android:text="ผู้ป่วยโรค :"
             android:layout_width="135dp"
@@ -25,7 +26,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:textSize="15sp" app:layout_constraintHorizontal_bias="0.0" android:textColor="#000000"
+            android:textSize="15sp" app:layout_constraintHorizontal_bias="0.024" android:textColor="#000000"
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.011"/>
     <TextView
@@ -275,8 +276,8 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintHorizontal_bias="0.0" android:checked="true"/>
     <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp" app:srcCompat="@drawable/ss"
+            android:layout_width="43dp"
+            android:layout_height="37dp" app:srcCompat="@drawable/diskette"
             android:id="@+id/btn_save_notiiddd"
             app:layout_constraintTop_toTopOf="@+id/symtomppp_noti"
             app:layout_constraintBottom_toBottomOf="@+id/symtomppp_noti"

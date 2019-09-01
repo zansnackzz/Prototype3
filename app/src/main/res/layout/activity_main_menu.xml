@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Main_menu">
+        tools:context=".Main_menu"
+        android:background="@drawable/p2" android:backgroundTintMode="add">
 
     <ImageView
             android:layout_width="180dp"
@@ -18,11 +19,13 @@
     <Button
             android:text="สร้างรายชื่อผู้ป่วย"
             android:layout_width="195dp"
-            android:layout_height="43dp" android:id="@+id/input_new_btn"
+            android:layout_height="43dp"
+            android:id="@+id/input_new_btn"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.707" app:layout_constraintHorizontal_bias="0.548"/>
+            app:layout_constraintVertical_bias="0.707" app:layout_constraintHorizontal_bias="0.548"
+            android:background="@drawable/but8"/>
     <Button
             android:text="รายชื่อผู้ป่วย"
             android:layout_width="195dp"
@@ -30,5 +33,6 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.53" app:layout_constraintVertical_bias="0.562"/>
+            app:layout_constraintHorizontal_bias="0.53" app:layout_constraintVertical_bias="0.562"
+            android:background="@drawable/but8"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
