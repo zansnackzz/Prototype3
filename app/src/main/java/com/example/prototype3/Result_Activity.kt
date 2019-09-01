@@ -29,7 +29,7 @@ class Result_Activity : AppCompatActivity() {
 
             val intent = Intent(this,List_patient::class.java)
             startActivity(intent)
-
+        Log.d("ttt","tttt")
 
         }
 
