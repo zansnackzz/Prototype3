@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_symptomm.*
 class Symptomm_Old_Patient : AppCompatActivity() {
     var r: Int = 0
     var rr: Int = 2
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_symptomm__old__patient)
@@ -26,7 +27,7 @@ class Symptomm_Old_Patient : AppCompatActivity() {
         val userr_id = intent.getStringExtra(Detail_Show_For_Old_Patient.User_Userid)
         val statuss_id = intent.getStringExtra(Detail_Show_For_Old_Patient.STATUS_ID)
         val status_numm = intent.getStringExtra(Detail_Show_For_Old_Patient.STATUS_NUMM)
-
+        val status_pointt = intent.getStringExtra(Detail_Show_For_Old_Patient.PATIENT_POINT)
 
 
 
@@ -175,7 +176,7 @@ class Symptomm_Old_Patient : AppCompatActivity() {
                 20-> "สภาวะที่ผู้ป่วยสามารถช่วยเหลือตัวเองได้"
                 else -> "Not Matched"
             }
-
+            val resulttall = status_pointt.toInt()+r
             val sttaresult = status_numm.toInt()+1
             val status_nnumm = status_numm
             val rresult = r.toString()
@@ -185,21 +186,23 @@ class Symptomm_Old_Patient : AppCompatActivity() {
             val actionnnn = actionn_de
             val patientID = patient_id
             val statuss_num = sttaresult.toString()
+            val status_point = resulttall.toString()
             val ref = FirebaseDatabase.getInstance().getReference("/Status/$patientID/")
 
             val statusID = ref.push().key
-            val statuss = sentToStatusDB(statusID.toString(),rresult,detailshort,detaillong,symptommmm,actionnnn,statuss_num)
+            val statuss = sentToStatusDB(statusID.toString(),rresult,detailshort,detaillong,symptommmm,actionnnn,statuss_num,status_point)
 
             ref.child("/Day$status_nnumm/$statusID").setValue(statuss).addOnCompleteListener{
-                Log.d("Status_input","Upload All DATA SS")
+                Log.d("Stadt","Result All INT =  $resulttall : Result All String = $status_point")
                 Log.d("Status_input","R = $rresult")
                 Log.d("Status_input","DetailShort = $detailshort")
                 Log.d("Status_input","DetailLong = $detaillong")
                 Log.d("Status_input","PatientID = $patientID")*
-                        Log.d("Status_input","Patient_id = $patient_id")
+                Log.d("Status_input","Patient_id = $patient_id")
                 Log.d("Status_input","StatusID = $statusID")
                 Log.d("SSOOP","$status_numm after $sttaresult")
                 Toast.makeText(this,"บันทึกสำเร็จ", Toast.LENGTH_SHORT).show()
+
 
 
             }
@@ -214,7 +217,7 @@ class Symptomm_Old_Patient : AppCompatActivity() {
             val ref2 = FirebaseDatabase.getInstance().getReference("/Status/$patientID2/")
 
             val statusID2 = statuss_id
-            val statuss2 = sentToStatusDB(statusID2,rresult2,detailshort2,detaillong2,symptommmm2,actionnnn2,statuss_num)
+            val statuss2 = sentToStatusDB(statusID2,rresult2,detailshort2,detaillong2,symptommmm2,actionnnn2,statuss_num,status_point)
 
             ref2.child("/Day0/$statusID2").setValue(statuss2).addOnCompleteListener{
                 Log.d("Status_input","Upload All DATA SS")

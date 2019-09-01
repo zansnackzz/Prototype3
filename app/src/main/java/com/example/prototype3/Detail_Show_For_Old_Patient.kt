@@ -44,6 +44,8 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                         val detailshort:String = it.child("detailshortStatusPatient").getValue().toString()
                         val statuss_id:String = it.child("id").getValue().toString()
                         val status_numm:String = it.child("status_num").getValue().toString()
+                        val statuspoint:String = it.child("status_point").getValue().toString()
+
 
                         symtomp_de_old.setText(sympp)
                         action_symptom.setText(actionn)
@@ -69,6 +71,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
 
                         }
@@ -89,6 +92,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("3")){
@@ -108,6 +112,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("4")){
@@ -127,6 +132,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("5")){
@@ -146,6 +152,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("6")){
@@ -165,6 +172,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("7")){
@@ -184,6 +192,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("8")){
@@ -203,6 +212,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("9")){
@@ -222,6 +232,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("10")){
@@ -241,6 +252,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("11")){
@@ -260,6 +272,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("12")){
@@ -279,6 +292,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("13")){
@@ -298,6 +312,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("14")){
@@ -317,6 +332,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("15")){
@@ -336,6 +352,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("16")){
@@ -355,6 +372,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("17")){
@@ -374,6 +392,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("18")){
@@ -393,6 +412,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("19")){
@@ -412,6 +432,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("20")){
@@ -431,6 +452,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("21")){
@@ -450,6 +472,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("22")){
@@ -469,7 +492,9 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
+
                         }
                         if(status_numm.equals("23")){
                             btn_notificate.setOnClickListener {
@@ -488,6 +513,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("24")){
@@ -507,6 +533,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("25")){
@@ -526,6 +553,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("26")){
@@ -545,6 +573,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("27")){
@@ -564,6 +593,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("28")){
@@ -583,6 +613,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("29")){
@@ -602,6 +633,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                         if(status_numm.equals("30")){
@@ -614,13 +646,14 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
                             }
 
                             btn_evaluation.setOnClickListener {
-                                val intent = Intent(this@Detail_Show_For_Old_Patient,Symptomm_Old_Patient::class.java)
+                                val intent = Intent(this@Detail_Show_For_Old_Patient,Result_Activity::class.java)
                                 intent.putExtra(Symptommmm,sympp)
                                 intent.putExtra(Actionnn,actionn)
                                 intent.putExtra(PATIENT_ID, patient_iid)
                                 intent.putExtra(User_Userid, uuser_id)
                                 intent.putExtra(STATUS_ID, statuss_id)
                                 intent.putExtra(STATUS_NUMM, status_numm)
+                                intent.putExtra(PATIENT_POINT,statuspoint)
                                 startActivity(intent)}
                         }
                     }
@@ -688,7 +721,7 @@ class Detail_Show_For_Old_Patient : AppCompatActivity() {
         val PATIENT_BD = "PATIENT_BD"
         val PATIENT_GENDER = "PATIENT_GENDER"
         val User_Userid = "User_Userid"
-
+        val PATIENT_POINT = "PATIENT_POINT"
         val STATUS_NUMM = "STATUS_NUMM"
         val STATUS_ID = "STATUS_ID"
         val Symptommmm = "Symptommmm"

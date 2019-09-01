@@ -186,10 +186,11 @@ class SymptommActivity : AppCompatActivity() {
            val actionnnn = actionn_de
            val patientID = patient_id
            val statuss_num = rr.toString()
+           val status_point = rresult
            val ref = FirebaseDatabase.getInstance().getReference("/Status/$patientID/")
 
            val statusID = ref.push().key
-           val statuss = sentToStatusDB(statusID.toString(),rresult,detailshort,detaillong,symptommmm,actionnnn,statuss_num)
+           val statuss = sentToStatusDB(statusID.toString(),rresult,detailshort,detaillong,symptommmm,actionnnn,statuss_num,status_point)
 
            ref.child("/Day0/$statusID").setValue(statuss).addOnCompleteListener{
                Log.d("Status_input","Upload All DATA SS")
